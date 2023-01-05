@@ -36,10 +36,15 @@
 		}
 	}
 
-	setInterval(function() {
-        setMouse()
+	interval = setInterval(function() {
+		if (location.href.search("threads") != -1) {
+        	setMouse()
+        } else {
+        	clearInterval(interval);
+        }
 	}, delay)
 
+if (location.href.search("create-thread") != -1) {
 	while (typeof $("#ctrl_title_thread_create")[0] != "undefined" && $("#ctrl_title_thread_create")[0].value == "") {
 		$("#ctrl_title_thread_create")[0].value = `Жалоба на пользователя ${location.href.replace("https://zelenka.guru/forums/801/create-thread?", "").split("&")[0]}`
 		var ComplaintText1 = `<p>1. Никнейм нарушителя и ссылка на профиль: ${location.href.replace("https://zelenka.guru/forums/801/create-thread?", "").split("&")[0]} ${location.href.replace("https://zelenka.guru/forums/801/create-thread?", "").split("&")[2]}</p>`
@@ -49,4 +54,5 @@
 		$("#ThreadCreate > fieldset:nth-child(2) > dl.ctrlUnit.fullWidth > dd > div > div.fr-box.messageText.baseHtml.LolzteamEditor.fr-ltr.fr-basic.fr-top > div.fr-wrapper > div")[0].innerHTML += ComplaintText2
 		$("#ThreadCreate > fieldset:nth-child(2) > dl.ctrlUnit.fullWidth > dd > div > div.fr-box.messageText.baseHtml.LolzteamEditor.fr-ltr.fr-basic.fr-top > div.fr-wrapper > div")[0].innerHTML += ComplaintText3
 	}
+}
 })();
