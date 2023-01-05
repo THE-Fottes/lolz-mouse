@@ -1,7 +1,7 @@
 <img src="./mouse.png" height="240">
 
 ## Установка
-### 1. Скачайте и розархивируйте архив
+### 1. Скачайте и розархивируйте архив (Либо возьмите код из темы на лолзе)
 ### 2. Установите Tampermonkey
 ```bash
 https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=ru
