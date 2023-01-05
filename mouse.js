@@ -22,7 +22,7 @@
 				var __name = $('.message > div.messageInfo > div.userText > span > a > span')[i].innerText
 				var __link = $('.message > div.messageInfo > div.userText > a')[i].href
 				var __userlink = $('.message > div.messageInfo > div.userText > span > a')[i].href
-				$(".message > div.messageInfo > div.messageContent > div > div.publicControls")[i].innerHTML += `<a class="item control _ratButton "> <li onclick="createComplaint('${__name}', '${__link}', '${__userlink}')"><img src="https://github.com/THE-Fottes/lolz-rat/blob/main/mouse.png?raw=true" height="40"></li></a>`
+				$(".message > div.messageInfo > div.messageContent > div > div.publicControls")[i].innerHTML += `<a class="item control _ratButton "> <li onclick="createComplaint('${__name}', '${__link}', '${__userlink}')"><img src="https://github.com/THE-Fottes/lolz-mouse/blob/main/mouse.png?raw=true" height="40"></li></a>`
 			}
 		}
 
@@ -31,7 +31,7 @@
 				var __name = $('.comment > div.commentInfo > div.commentContent > a')[i].innerText
 				var __link = $('.comment > div.commentInfo > div.commentControls > div > a.LikeLink.item.control.like')[i].href.replace("like", "")
 				var __userlink = $('.comment > div.commentInfo > div.commentContent > a')[i].href
-				$(".comment > div.commentInfo > div.commentControls > div")[i].innerHTML += `<a class="item control _ratButton "> <li onclick="createComplaint('${__name}', '${__link}', '${__userlink}')"><img src="https://github.com/THE-Fottes/lolz-rat/blob/main/mouse.png?raw=true" height="40"></li></a>`
+				$(".comment > div.commentInfo > div.commentControls > div")[i].innerHTML += `<a class="item control _ratButton "> <li onclick="createComplaint('${__name}', '${__link}', '${__userlink}')"><img src="https://github.com/THE-Fottes/lolz-mouse/blob/main/mouse.png?raw=true" height="40"></li></a>`
 			}
 		}
 	}
