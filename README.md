@@ -1,5 +1,4 @@
-
-<img src="./mouse.png">
+<img src="./mouse.png" height="240">
 
 ## Установка
 ### 1. Скачайте и розархивируйте архив
@@ -7,7 +6,6 @@
 ```bash
 https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=ru
 ```
-[a link](https://github.com/user/repo/blob/branch/other_file.md)
 ### 3. Откройте Tampermonkey и перейдите во вкладку утилиты
 ```bash
 chrome-extension://dhdgffkkebhmkfjojejmpbldmpobfkfo/options.html#nav=utils
