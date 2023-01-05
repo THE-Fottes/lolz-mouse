@@ -1,14 +1,17 @@
 // ==UserScript==
 // @name         Lolz-mouse
-// @version      0.1
+// @version      1.0
 // @description  Добавляет мышь на сообщения
 // @author       Fottes
 // @match        https://zelenka.guru/threads/*
+// @match        https://zelenka.guru/forums/*/create-thread*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=zelenka.guru
 // @grant        unsafeWindow
 // ==/UserScript==
 
 (function() {
+    var delay = 50 // ms
+
 	unsafeWindow.on = true;
 	unsafeWindow.createComplaint = function(username, link, userlink) {
 		window.open(`https://zelenka.guru/forums/801/create-thread?${username}&${link}&${userlink}`, '_blank');
@@ -35,7 +38,7 @@
 
 	setInterval(function() {
         setMouse()
-	}, 200)
+	}, delay)
 
 	while (typeof $("#ctrl_title_thread_create")[0] != "undefined" && $("#ctrl_title_thread_create")[0].value == "") {
 		$("#ctrl_title_thread_create")[0].value = `Жалоба на пользователя ${location.href.replace("https://zelenka.guru/forums/801/create-thread?", "").split("&")[0]}`
